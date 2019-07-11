@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/StrongSunshine/feedback#readme",
   "dependencies": {
-    "body-parser": "1^.19^.0",
-    "express": "4^.17^.1",
-    "express-art-template": "1^.0^.1",
-    "art-template": "4^.13^.2",
-    "mongodb" : "3^.2^.7"
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "express-art-template": "1.0.1",
+    "art-template": "4.13.2",
+    "mongodb" : "3.2.7"
   }
 }
