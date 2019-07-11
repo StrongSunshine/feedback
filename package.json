@@ -1,0 +1,29 @@
+{
+  "name": "feedback",
+  "version": "1.0.0",
+  "description": "一个单页留言本",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrongSunshine/feedback.git"
+  },
+  "keywords": [
+    "feedback"
+  ],
+  "author": "StrongSunshine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StrongSunshine/feedback/issues"
+  },
+  "homepage": "https://github.com/StrongSunshine/feedback#readme",
+  "dependencies": {
+    "body-parser": "1^.19^.0",
+    "express": "4^.17^.1",
+    "express-art-template": "1^.0^.1",
+    "art-template": "4^.13^.2",
+    "mongodb" : "3^.2^.7"
+  }
+}
