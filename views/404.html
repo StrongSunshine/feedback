@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>feedback</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-color: #f1f2f3;
+	}
+	.error-div{
+		margin: 0 auto;
+		width: 80%
+	}
+	.error-div p {
+		color: #eaab12;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+	}
+	.error-img{
+		width: 660px;
+    height: 360px;
+    margin: 0 auto 0;
+    background: url('/images/error.jpg') no-repeat;
+	}
+	.link-btn{
+		text-align: center;
+	}
+	.link-btn a {
+		text-decoration: none;
+		display: inline-block;
+    width: 150px;
+    height: 44px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    border-radius: 2px;
+    color: #fff;
+    margin: 0 10px;
+    background-color: #0ec5a1;
+	}
+	.link-btn a:last-child{
+		background-color: #ffba00;
+	}
+</style>
+</head>
+<body>
+    <div class="error-div">
+        <div class="error-img"></div>
+        <p>抱歉，您访问页面未找到！</p>
+        <div class="link-btn">
+            <a href="/" title="首页"rel="nofollow">返回首页</a>
+            <a href="javascript:;" onclick="history.go(-1);">返回上一页</a>
+        </div>
+    </div>
+</body>
+</html>

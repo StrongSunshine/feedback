@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>feedback</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="favicon.ico">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <h4>在线留言板</h4>
+            <div class="view">
+                <div class="arr"></div>
+                <div class="textbox">
+                    <div class="scrollbox">
+                        <div class="scroll">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="text">                     
+                    	{{ each feedback }}
+                    	<p><span>{{ $value.userName }}&nbsp:&nbsp</span><span>{{ $value.liuYan }}</span>
+                    	{{ /each }}
+                    </div>
+                    <div class="load">
+                        <div class="loadbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <form>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <textarea class="form-control" rows="3" id="liuyan" placeholder="请输入你想说的话"></textarea>
+                    <button type="button" class="btn btn-warning">send</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="title">
+                            提示：
+                        </h4>
+                    </div>
+                    <div class="modal-body" id="alarm">
+                        请将信息填写完整
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cir"></div>
+    <div class="cir"></div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
